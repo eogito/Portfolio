@@ -1,0 +1,171 @@
+@font-face { font-family: Anuphan; src: url('Anuphan-VariableFont_wght.ttf'); } 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .logo {
+    size-adjust: 10%;
+  }
+
+  .header {
+    overflow: hidden;
+    background-color: #555151;
+    padding: 20px 20px;
+    position: relative;
+  }
+  
+  .about-me {
+    font-size: 20px;
+
+  }
+  nav {
+    font-family: 'Anuphan', 'Franklin Gothic Medium', 'Arial Narrow';
+    font-weight: bold;
+    background-color: #555151;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 3px 5px;
+    margin: 0px;
+    background-color: inherit;
+    font-family: 'Anuphan', 'Franklin Gothic Medium', 'Arial Narrow';
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  nav button:hover {
+    background-color: red;
+  }
+  
+  .centered {
+    font-size: 50px;
+    font-family: 'Anuphan', 'Franklin Gothic Medium', 'Arial Narrow';
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: 'Anuphan', 'Franklin Gothic Medium', 'Arial Narrow';
+    font-weight: bold;
+  }
+  p {
+    font-family: 'Anuphan', 'Franklin Gothic Medium', 'Arial Narrow';
+    margin-left: 50px;
+  }
+  .coding-image {
+    margin: 0px 50px 0px 50px;
+  }
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #555151;
+    color: white;
+    text-align: center;
+    align-self: baseline;
+    margin-top: 100px;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 0px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 3px 5px;
+    margin: 0px;
+    background-color: inherit;
+    font-family: 'Anuphan', 'Franklin Gothic Medium', 'Arial Narrow';
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 98px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  ul li li:before {
+    content: none;
+}
