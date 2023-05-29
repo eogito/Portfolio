@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class = "logo">
+        <a href="#"><img src="Assets\logo.jpg" alt="Assets\logo.png" style="width:30px;height:30px;margin-left:15px;margin-top:5px;margin-right: 0px;"></a>
+      </div>
+      <p style="margin-left: 60px;position: absolute; color: white">Glen Lin ICS4UO Portfolio</p>
+      <ul>
+        <li><button onclick="window.location.href='index.html'">Home</button></li>
+        <li><button onclick="window.location.href='about-me.html'">About</button></li>
+        <li><button onclick="window.location.href='projects.html'">Projects</button></li>
+        <li style="color: white;">
+          <div class="dropdown">
+            <button class="dropbtn">Tutorials
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a onclick="window.location.href='OOP.html'">OOP</a>
+              <a onclick="window.location.href='array.html'">Array and Arraylists</a>
+              <a onclick="window.location.href='sorting.html'">Sorting and Searching</a>  
+              <a onclick="window.location.href='recursion.html'">Recursion</a>  
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <img src="Assets\summer.jpg" alt="background-image.png" style="width:100%;height: 300px;overflow: hidden;filter: brightness(30%);overflow: hidden;">
+    <div class="centeredabout">OOP</div>
+    <h1 style = "margin-top: 100px; margin-left: 100px; margin-bottom: 30px;">What is OOP?</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">OOP, object-oriented programming, is a method of programming that organizes the software around objects, rather than a set of instructions. OOP relies on 2 concepts: classes and objects. Classes are like abstract blueprints that you can create an object out of. Classes represent all objects of a selected category and have attributes and methods. Attributes are qualities of the class while methods are the tasks that a created object can perform. For example. Let’s take the characters of the game “Brawl Stars” (I will use more examples from this for consistency). The broad category of all the characters is a brawler and so, our class can be called a brawler. A brawler has many attributes such as their name, health, speed and methods such as move and attack. Thus, our class of a brawler will have those attributes and method.</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Attributes and methods can be either private or public. Private attributes and methods mean that those attributes and methods can only be accessed or run inside the same class. Public attributes and methods on the other hand can be accessed or run in any file as long as an object is created.</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Objects are, well, objects created using the template of a class. They are specific instances/examples of a class. Each object can have its individual attributes, but they have the same methods and can only perform the same tasks. We can create an infinite number of distinct objects from a class as a result. For example, let’s go back to our class of a brawler. With the brawler class, we can create specific instances of a brawler, or brawler objects. Let’s say we create one brawler with the name “Shelly”, a health of 3800 and a speed of 720. We create another brawler with the name “Colt”, a health of 2800 and a speed of 820. We have 2 distinct brawler objects with different attributes, but they can only perform the same 2 tasks: move and attack.
+    <img style = "margin-left: 50px; margin-top: 80px; margin-bottom: 50px;"src = "https://cdn.discordapp.com/attachments/1048076355331440720/1112783690716696616/image.png">
+    <h1 style = "margin-left: 100px; margin-bottom: 30px;">Why do we use OOP?</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">The main benefit that comes with OOP is large projects. OOP allows programmers to reuse code snippets many times, troubleshoot easier and overall organize everything better and be more flexible.     </p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Objects can be reused however necessary so instead of reprogramming the same thing over and over again when one needs to add to a program, one can just create a new object. Troubleshooting becomes a lot easier as one only needs to fix code inside the class rather than having to go through every instance of the object that is erroring.    </p>
+    <h1 style = "margin-left: 100px; margin-bottom: 30px;">How do we use OOP?</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">There are some rules when using OOP in programming. First of all, every java file can only have one class. The class and the file should have the same name and start with a capital letter. Furthermore, when creating a class there are a couple of things one should notice. Firstly, a class requires a class constructor in order to allow objects to be created off of that class. The constructor should initialize all the attributes for that object and should also be able to take in specific values, or parameters, to be set as the attributes.    </p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">When creating an object, it is created like a variable, starting with the class name and then the object name, followed by a new keyword and then the class constructor with any wanted parameters.    </p>
+    <img style = "margin-left: 150px; margin-top: 50px;"src = "https://cdn.discordapp.com/attachments/1048076355331440720/1112786131679973467/image.png">
+    <h1 style = "margin-left: 100px; margin-bottom: 30px;">What is Inheritence</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Inheritance is when a class inherits the attributes and methods of another class, establishing an is-a relationship when one is a parent class and another is a child class. In coding terms, it is said that the class extends another class. For example, continuing on the previous example, let’s say we have a brawler class. However, we have another class called “brawlerType”. The brawlerType class is a broader category than the brawler class, so it has fewer attributes and methods. In this case, let's say the brawlerType class only has a speed attribute and a move method. The brawler class can inherit the brawlerType class attributes and methods and thus, it now has the same methods and attributes where more can be added. Now, a brawler object “is-a” brawlerType object.</p>
+    <h1 style = "margin-left: 100px; margin-bottom: 30px;">How do we use Inheritence</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">When creating a class that we want to inherit another class with, we put the keyword extend beside the class and then the parent class’s name. Then, in order the call the constructor of the parent class, you run super() inside the child class’ constructor with the necessary parameters.</p>
+    <img style = "margin-left: 150px; margin-top: 50px;"src = "https://cdn.discordapp.com/attachments/1048076355331440720/1112793101124247652/image.png">
+    <h1 style = "margin-left: 100px; margin-bottom: 30px; margin-top: 150px">Sources</h2>
+      <a href="https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/" style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">- https://www.geeksforgeeks.org/object-oriented-programming/</a>
+      <a href="https://www.geeksforgeeks.org/inheritance-in-java/" style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">- https://www.geeksforgeeks.org/inheritance-in-java/</a>
+    </main>
+  </main>
+  <footer>
+    <p class="footer-text">Contact: glenlin7813@gmail.com, Eogito#0732</p>
+  </footer>
+</body>
+</html>

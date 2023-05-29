@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class = "logo">
+        <a href="#"><img src="Assets\logo.jpg" alt="Assets\logo.png" style="width:30px;height:30px;margin-left:15px;margin-top:5px;margin-right: 0px;"></a>
+      </div>
+      <p style="margin-left: 60px;position: absolute; color: white">Glen Lin ICS4UO Portfolio</p>
+      <ul>
+        <li><button onclick="window.location.href='index.html'">Home</button></li>
+        <li><button onclick="window.location.href='about-me.html'">About</button></li>
+        <li><button onclick="window.location.href='projects.html'">Projects</button></li>
+        <li style="color: white;">
+          <div class="dropdown">
+            <button class="dropbtn">Tutorials
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a onclick="window.location.href='OOP.html'">OOP</a>
+              <a onclick="window.location.href='array.html'">Array and Arraylists</a>
+              <a onclick="window.location.href='sorting.html'">Sorting and Searching</a>  
+              <a onclick="window.location.href='recursion.html'">Recursion</a>  
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <img src="Assets\summer.jpg" alt="background-image.png" style="width:100%;height: 300px;overflow: hidden;filter: brightness(30%);overflow: hidden;">
+    <div class="centeredabout">Sorting and Searching</div>
+    <h1 style = "margin-top: 100px; margin-left: 100px; margin-bottom: 30px;">Time Complexity</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Time Complexity is a method of determining how fast a sorting algorithm takes. It is measured with the big O notation: O(n), where n is the number of operations taken. For example, Insertion Sort takes O(n^2) since you have to iterate through the array n times, where n is the length of the array.</p>
+    <h1 style = "margin-left: 100px; margin-bottom: 30px;">Sorting</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Sorting is when you sort an array based on a certain condition, for example, sorting an array of numbers from least to greatest.
+        There are 3 main ways of sorting:</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Insertion Sort: This is where you iterate through an array, find the largest element, and move it to the back. Then you repeat that process for the unsorted subarray until the entire array is sorted.</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Merge Sort: This is a recursive sorting algorithm where you repeatedly separate the array into 2 subarrays. Then, you merge the 2 subarrays such that they are sorted. For example, {1,4,7} and {2,6,9} becomes {1,2,4,6,7,9}</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Quick Sort: This is where you repeatedly pick pivot points in the array and then move elements such that all the elements before the pivot are smaller than it and all the elements after the pivot are greater than it.</p>
+    <img style = "margin-left: 150px; margin-top: 50px;"src = "https://afteracademy.com/images/comparison-of-sorting-algorithms-compare1-18082c14f960abf3.png">
+    <h1 style = "margin-left: 100px; margin-bottom: 30px;">Searching</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Searching is when you search for a specific value in an array. There are 2 main ways of searching:</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Selection Search: This is where you loop through the entire array until you find the required number</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Binary Search: This requires you to have a sorted array. You essentially keep choosing the middle point of the array and then seeing if the required number is greater or smaller than it. If it is greater than you repeat the process with the greater half of the subarray. If it is smaller than you repeat the process with the smaller half of the subarray until the subarray is of length 1, and the remaining element is your number.</p>
+    
+    <h1 style = "margin-left: 100px; margin-bottom: 30px; margin-top: 150px">Sources</h2>
+        <a href="https://www.geeksforgeeks.org/sorting-algorithms/" style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">- https://www.geeksforgeeks.org/sorting-algorithms/</a>
+        <a href="https://www.geeksforgeeks.org/searching-algorithms/" style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">- https://www.geeksforgeeks.org/searching-algorithms/</a>
+  </main>
+  <footer>
+    <p class="footer-text">Contact: glenlin7813@gmail.com, Eogito#0732</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class = "logo">
+        <a href="#"><img src="Assets\logo.jpg" alt="Assets\logo.png" style="width:30px;height:30px;margin-left:15px;margin-top:5px;margin-right: 0px;"></a>
+      </div>
+      <p style="margin-left: 60px;position: absolute; color: white">Glen Lin ICS4UO Portfolio</p>
+      <ul>
+        <li><button onclick="window.location.href='index.html'">Home</button></li>
+        <li><button onclick="window.location.href='about-me.html'">About</button></li>
+        <li><button onclick="window.location.href='projects.html'">Projects</button></li>
+        <li style="color: white;">
+          <div class="dropdown">
+            <button class="dropbtn">Tutorials
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a onclick="window.location.href='OOP.html'">OOP</a>
+              <a onclick="window.location.href='array.html'">Array and Arraylists</a>
+              <a onclick="window.location.href='sorting.html'">Sorting and Searching</a>  
+              <a onclick="window.location.href='recursion.html'">Recursion</a>  
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <img src="Assets\summer.jpg" alt="background-image.png" style="width:100%;height: 300px;overflow: hidden;filter: brightness(30%);overflow: hidden;">
+    <div class="centeredabout">Arrays and Arraylists</div>
+    <h1 style = "margin-top: 100px; margin-left: 100px; margin-bottom: 30px;">What are Arrays?</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">An array is a collection of items stored in a singular data type, resembling a row of objects that can be modified at any time. However, it is essential to note that all the items in an array must be of the same data type. When initializing an array, its size is fixed and cannot be changed. Nevertheless, you can read the array and access any specific index to retrieve or modify its contents. Although the size of the array remains constant, the ability to manipulate individual elements provides flexibility and adaptability within the array structure.</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">An array is created in a manner similar to a class, with the size initialized inside the square brackets next to it. Additionally, we have the option to manually set the contents of the array using curly brackets. There are several operations we can perform on an array, one of which is traversing through its entire length. This can be accomplished using a for loop that iterates over each index in the array, allowing us to access and process the data stored at each position.</p>
+    <img style = "margin-left: 150px; margin-top: 80px; margin-bottom: 50px;"src = "https://cdn.discordapp.com/attachments/1048076355331440720/1112787373353353369/image.png">
+    <h1 style = "margin-left: 100px; margin-bottom: 30px;">2D Arrays</h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">Arrays in programming have the flexibility to store any data type, including other arrays. When an array stores other arrays, it creates a two-dimensional (2D) array. This transition from a single row of items to a square-like structure enables more complex data organization. 2D arrays can take on two forms: rectangular or ragged. In a rectangular 2D array, all rows have the same number of elements, forming a perfect square shape. On the other hand, a ragged 2D array allows rows to have different lengths, resulting in an irregular shape. To work with 2D arrays, specific syntax is used. Elements in a 2D array are accessed by using two sets of square brackets, where the first set indicates the row index, and the second set indicates the column index. This syntax allows programmers to manipulate and access values within 2D arrays.</p>
+    <img style = "margin-left: 150px; margin-top: 50px;"src = "https://cdn.discordapp.com/attachments/1048076355331440720/1112788612770177174/image.png">
+    <h1 style = "margin-left: 100px; margin-bottom: 30px;">What is an arraylist?    </h2>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">An ArrayList is an enhanced version of an array that offers the advantage of being resizable. Unlike traditional arrays, an ArrayList dynamically adjusts its size based on the number of elements it contains. This means that it can increase or decrease in size as elements are added or removed.</p>
+    <p style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">To declare an arraylist we write ArrayList&lt;Data Type&gt; where you put the data type you want to store between the angle brackets. However, primitive data types can no longer be stored and their wrapper classes must be stored instead such as Integer instead of int. Otherwise, you can treat it as a primitive data type.</p>
+    
+        <img style = "margin-left: 150px; margin-top: 50px;"src = "https://cdn.discordapp.com/attachments/1048076355331440720/1112791285087080468/image.png">
+    <h1 style = "margin-left: 100px; margin-bottom: 30px; margin-top: 150px">Sources</h2>
+    <a href="https://www.geeksforgeeks.org/array-data-structure/" style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">- https://www.geeksforgeeks.org/array-data-structure/</a>
+    <a href="https://www.geeksforgeeks.org/arraylist-in-java" style = "margin-left: 100px; margin-right: 100px; margin-bottom: 15px;">- https://www.geeksforgeeks.org/arraylist-in-java/</a>
+  </main>
+  <footer>
+    <p class="footer-text">Contact: glenlin7813@gmail.com, Eogito#0732</p>
+  </footer>
+</body>
+</html>
